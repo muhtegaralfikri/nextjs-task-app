@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Task App (My Task App)
 
-## Getting Started
+![Screenshot Aplikasi My Task App](assets\app-screenshot.png)
 
-First, run the development server:
+Sebuah aplikasi To-Do List (Task Management) sederhana namun fungsional yang dibangun untuk mendemonstrasikan fondasi full-stack menggunakan Next.js. Project ini mencakup operasi CRUD yang lengkap dengan state yang persisten di sisi client.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Fitur Utama (Features)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Create:** Menambahkan task baru melalui form input.
+* **Read:** Menampilkan daftar task.
+* **Update (Toggle):** Menandai task sebagai "selesai" (atau batal) menggunakan checkbox.
+* **Update (Edit):** Mengedit teks task secara *in-line* (langsung di tempat).
+* **Delete:** Menghapus task dari daftar.
+* **State Persisten:** Data task disimpan di **Local Storage** browser, sehingga data tidak hilang saat halaman di-refresh.
+* **SSR Hydration Safe:** Dibangun dengan pola yang benar untuk menghindari *hydration mismatch* antara Server (SSR) dan Client (`localStorage`).
+* **UI Responsif:** Dibuat dengan Tailwind CSS.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Teknologi yang Digunakan (Tech Stack)
 
-To learn more about Next.js, take a look at the following resources:
+* **Framework:** Next.js 14 (App Router)
+* **Bahasa:** TypeScript
+* **Styling:** Tailwind CSS
+* **State Management:** React Context API
+* **Penyimpanan (Storage):** Local Storage (Client-side)
+* **Linting/Formatting:** ESLint & Prettier (via Next.js)
+* **Bundler:** Turbopack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## LOCAL (Cara Menjalankan Lokal)
 
-## Deploy on Vercel
+1.  Clone repository ini:
+    ```bash
+    git clone https://github.com/muhtegaralfikri/nextjs-task-app.git
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  Masuk ke direktori project:
+    ```bash
+    cd nextjs-task-app
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  Install semua dependensi:
+    ```bash
+    npm install
+    ```
+
+4.  Jalankan development server:
+    ```bash
+    npm run dev
+    ```
+
+5.  Buka [http://localhost:3000](http://localhost:3000) di browser-mu.
