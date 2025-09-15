@@ -1,5 +1,7 @@
 # Next.js Task App (My Task App)
 
+### 🚀 **[LIHAT LIVE DEMO DI SINI](https://nextjs-task-app-six.vercel.app)** 🚀
+
 ![Screenshot Aplikasi My Task App](./assets/app-screenshot.png)
 
 Sebuah aplikasi To-Do List (Task Management) sederhana namun fungsional yang dibangun untuk mendemonstrasikan fondasi full-stack menggunakan Next.js. Project ini mencakup operasi CRUD yang lengkap dengan state yang persisten di sisi client.
